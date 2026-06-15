@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サービス | 株式会社MIRAI SPACE</title>
+<meta name="description" content="株式会社MIRAI SPACEのサービス。コンサルティング・営業支援・エンジニアリングの3つの事業で、戦略から実装・運用まで地域企業を一社で総合支援します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/service.css">
+<style>
+  /* service-index specific */
+  .svc-list{display:grid;grid-template-columns:1fr;gap:26px;max-width:960px;margin:0 auto}
+  .svc-row{display:grid;grid-template-columns:84px 1fr auto;gap:28px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:32px 34px;position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s}
+  .svc-row::before{content:"";position:absolute;left:0;top:0;width:6px;height:100%;background:var(--c)}
+  .svc-row:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(20,34,61,.13)}
+  .svc-row.c1{--c:var(--green)} .svc-row.c2{--c:var(--blue)} .svc-row.c3{--c:#6a3cb5}
+  .svc-row .badge{width:84px;height:84px;border-radius:18px;background:var(--c);color:#fff;display:flex;align-items:center;justify-content:center;font-family:"Sora";font-weight:800;font-size:1.7rem}
+  .svc-row .body .en{font-family:"Sora";font-size:.72rem;letter-spacing:.22em;color:var(--c);text-transform:uppercase}
+  .svc-row .body h3{font-size:1.32rem;color:var(--navy);font-weight:700;margin-top:4px}
+  .svc-row .body p{margin-top:10px;color:var(--muted);font-size:.94rem;max-width:52ch}
+  .svc-row .body .tags{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+  .svc-row .body .tags span{font-size:.78rem;color:var(--ink);background:var(--bg-alt);border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+  .svc-row .go{flex:none;width:52px;height:52px;border-radius:50%;border:1.5px solid var(--c);color:var(--c);display:flex;align-items:center;justify-content:center;font-family:"Sora";font-weight:800;font-size:1.2rem;transition:.25s}
+  .svc-row:hover .go{background:var(--c);color:#fff}
+  @media(max-width:760px){
+    .svc-row{grid-template-columns:64px 1fr;gap:18px;padding:24px 22px}
+    .svc-row .badge{width:64px;height:64px;font-size:1.3rem;border-radius:14px}
+    .svc-row .go{display:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="logo" href="index.html"><span class="mark">MIRAI<span>&nbsp;SPACE</span></span><span class="sub">株式会社MIRAI SPACE</span></a>
+    <button class="navtoggle" aria-label="メニュー" onclick="document.getElementById('gnav').classList.toggle('open')"><span></span><span></span><span></span></button>
+    <nav class="global" id="gnav"><ul>
+      <li><a href="index.html">ホームページ</a></li>
+      <li><a class="current" href="service.html">サービス</a></li>
+      <li><a href="products.html">取り扱い商品</a></li>
+      <li><a href="company.html">企業情報</a></li>
+      <li><a class="cta" href="contact.html">お問い合わせ</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="stars"></div>
+  <div class="wrap inner">
+    <span class="eyebrow">SERVICE</span>
+    <h1>戦略から実装・運用まで、<br><span class="accent">一社</span>で。</h1>
+    <p class="lead">コンサルティング・営業支援・エンジニアリング。3つの事業を掛け合わせ、地域企業の課題に一気通貫で応えます。</p>
+  </div>
+</section>
+<div class="crumb"><div class="wrap"><a href="index.html">ホームページ</a><span class="sep">/</span><span>サービス</span></div></div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="head"><span class="en">Our Services</span><h2 class="ja">3つの事業＋販売商品</h2><p class="desc">自社サービスに、厳選した商材ソリューションの販売を加えた4つの領域。戦略から実装・運用まで、一社で一気通貫に支援します。</p></div>
+    <div class="pillars">
+      <a class="pillar p1 reveal" href="service-consulting.html">
+        <div class="tag"><img src="assets/services/consulting.png" alt="コンサルティング"></div>
+        <div>
+          <h3>コンサルティング</h3>
+          <div class="psub">CONSULTING</div>
+          <p>人事・組織・採用・定着の設計、企業ブランディング、マーケティング戦略、教育・研修まで。組織と事業の土台づくりを支援します。</p>
+        </div>
+        <span class="go">→</span>
+      </a>
+      <a class="pillar p2 reveal" href="service-sales.html">
+        <div class="tag"><img src="assets/services/sales.png" alt="営業支援"></div>
+        <div>
+          <h3>営業支援</h3>
+          <div class="psub">SALES</div>
+          <p>営業代行、Tier1企業開拓、ニーズ調査・データ分析、スキルマッチングまで。リソースとノウハウの両面から「売る力」を強くします。</p>
+        </div>
+        <span class="go">→</span>
+      </a>
+      <a class="pillar p3 reveal" href="service-engineering.html">
+        <div class="tag"><img src="assets/services/engineering.png" alt="エンジニアリング"></div>
+        <div>
+          <h3>エンジニアリング</h3>
+          <div class="psub">ENGINEERING</div>
+          <p>AI・ソフトウェア開発、機械設計、電気設計、構造解析まで。ソフトとハードを横断して、ものづくりの現場の技術課題に応えます。</p>
+        </div>
+        <span class="go">→</span>
+      </a>
+      <a class="pillar p4 reveal" href="products.html">
+        <div class="tag"><img src="assets/services/product.png" alt="取り扱い商品"></div>
+        <div>
+          <h3>取り扱い商品</h3>
+          <div class="psub">PRODUCTS</div>
+          <p>XR・空間音響・営業AI・VRドーム・搬送装置など、実用的な他社ソリューションを販売・導入支援。すぐ使える技術をお届けします。</p>
+        </div>
+        <span class="go">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site"><div class="wrap">
+  <div class="top">
+    <a class="logo" href="index.html"><span class="mark">MIRAI<span style="color:#7fb2e8">&nbsp;SPACE</span></span><span class="sub">株式会社ミライスペース</span></a>
+    <nav><ul>
+      <li><a href="index.html">ホームページ</a></li>
+      <li><a href="service.html">サービス</a></li>
+      <li><a href="products.html">取り扱い商品</a></li>
+      <li><a href="company.html">企業情報</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+    </ul></nav>
+  </div>
+  <div class="copy">Copyright © 株式会社MIRAI SPACE（ミライスペース） All Rights Reserved.</div>
+</div></footer>
+
+<script src="assets/reveal.js"></script>
+</body>
+</html>
